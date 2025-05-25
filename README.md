@@ -74,12 +74,11 @@
 
 Bạn có thể trải nghiệm ứng dụng **ChatApp** trực tiếp tại:
 
-🌐 [https://your-vercel-link.vercel.app](https://your-vercel-link.vercel.app)**
+🌐 [(https://fe-chat-hhdtt.vercel.app/)]
 
 ## 📬 Liên hệ
 
-- 📧 Email: chatapp.group@gmail.com  
-- 🌐 Website: https://chatapp.example.com  
+- 📧 Email: truongcongduy1052003@gmail.com  
 
 ---
 

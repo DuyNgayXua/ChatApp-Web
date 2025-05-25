@@ -1,19 +1,17 @@
-
 # 💬 ChatApp - Ứng dụng Chat Web & Mobile
 
 ## 🛍️ Giới thiệu
 
-**ChatApp** là ứng dụng chat đa nền tảng (Web và Mobile) với các chức năng chính giống Zalo như nhắn tin, gọi điện, gửi ảnh, video, quản lý bạn bè, nhóm chat... Dự án được phát triển bởi **nhóm ChatApp** gồm 4 thành viên, xây dựng theo kiến trúc **microservices** nhằm đảm bảo khả năng mở rộng, hiệu năng cao và dễ dàng bảo trì.
+**ChatApp** là ứng dụng chat đa nền tảng (Web và Mobile) với các chức năng chính giống Zalo như nhắn tin, gọi điện, gửi ảnh, video, quản lý bạn bè, nhóm chat... Dự án được phát triển bởi **nhóm ChatApp** gồm 4 thành viên, xây dựng theo kiến trúc **MVC (Model-View-Controller)** nhằm đảm bảo khả năng mở rộng, hiệu năng cao và dễ dàng bảo trì. Sử dụng **Socket.IO** để hỗ trợ realtime messaging.
 
 ---
 
 ## 🧱 Kiến trúc hệ thống
-![image](https://user-images.githubusercontent.com/your-username/chatapp-architecture.png)  
-- 👤 **Auth Service** – Xác thực người dùng 
-- 💬 **Chat Service** – Quản lý nhắn tin, gọi điện, gửi file
-- 🧑‍🤝‍🧑 **User Service** – Quản lý thông tin người dùng, danh bạ, nhóm chat  
-- ⚙️ **Admin Service** – Quản lý hệ thống, dashboard admin   
-- 🌐 **API Gateway** – Định tuyến và tập trung xử lý request từ client  
+
+- 👤 **Authentication** – Xác thực người dùng  
+- 💬 **Chat Controller** – Xử lý nhắn tin, gọi điện, gửi file  
+- 🧑‍🤝‍🧑 **User Controller** – Quản lý thông tin người dùng, danh bạ, nhóm chat  
+- 🌐 **Server Socket.IO** – Xử lý realtime messaging  
 
 ---
 
@@ -24,10 +22,9 @@
 - ![Node.js](https://img.shields.io/badge/Node.js-339933?logo=node.js&logoColor=white)
 - ![Express.js](https://img.shields.io/badge/Express.js-000000?logo=express&logoColor=white)
 - ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?logo=mongodb&logoColor=white)
-- 🧩 Microservices Architecture
-- 🔀 API Gateway
+- 🗂️ MVC Architecture
 - 🔐 JWT Authentication
-- 📨 WebSocket / Socket.IO cho realtime messaging
+- 📨 Socket.IO cho realtime messaging
 
 ### 💻 Frontend Web
 
@@ -45,13 +42,12 @@
 
 ## 🚀 Tính năng nổi bật
 
-- 🗨️ Nhắn tin 1-1 và nhóm với đa dạng biểu tượng, sticker, gửi ảnh/video
-- 📞 Gọi thoại, gọi video chất lượng cao
-- 👫 Quản lý bạn bè, đồng bộ danh bạ
-- 🔔 Thông báo đẩy realtime cho tin nhắn mới, cuộc gọi
-- 🔒 Bảo mật thông tin, mã hóa dữ liệu
-- 📂 Chia sẻ file nhanh chóng
-- 📱 Hỗ trợ đa nền tảng: Web + Mobile (Android, iOS)
+- 🗨️ Nhắn tin 1-1 và nhóm với đa dạng biểu tượng, sticker, gửi ảnh/video  
+- 👫 Quản lý bạn bè, đồng bộ danh bạ  
+- 🔔 Thông báo đẩy realtime cho tin nhắn mới, cuộc gọi  
+- 🔒 Bảo mật thông tin, mã hóa dữ liệu  
+- 📂 Chia sẻ file nhanh chóng  
+- 📱 Hỗ trợ đa nền tảng: Web + Mobile (Android, iOS)  
 
 ---
 
@@ -59,22 +55,26 @@
 
 ### 🤖 AI / ML
 
-- Tự động gợi ý từ khóa tìm kiếm bạn bè, nhóm chat
-- Phân tích thói quen chat để đề xuất sticker, GIF phù hợp
+- Tự động gợi ý từ khóa tìm kiếm bạn bè, nhóm chat  
+- Phân tích thói quen chat để đề xuất sticker, GIF phù hợp  
 
 ### 🧩 Hệ thống mở rộng
 
-- Tích hợp chatbot hỗ trợ tự động trả lời
-- Dùng Kafka / RabbitMQ để xử lý thông điệp bất đồng bộ
-- Sử dụng Redis cho caching realtime message
+- Tích hợp chatbot hỗ trợ tự động trả lời  
+- Sử dụng Redis cho caching realtime message  
 
 ### ⚙️ CI/CD & DevOps
 
-- Dockerize từng service, sử dụng Docker Compose / Kubernetes
-- Triển khai tự động bằng GitHub Actions hoặc Jenkins
-- Giám sát dịch vụ qua Prometheus + Grafana
+- Dockerize ứng dụng  
+- Triển khai tự động bằng GitHub Actions hoặc Jenkins  
+- Giám sát dịch vụ qua Prometheus + Grafana  
 
 ---
+## 🚀 Live Demo
+
+Bạn có thể trải nghiệm ứng dụng **ChatApp** trực tiếp tại:
+
+🌐 [https://your-vercel-link.vercel.app](https://your-vercel-link.vercel.app)**
 
 ## 📬 Liên hệ
 

@@ -1,0 +1,32 @@
+.navbar-container{
+    display: flex;
+    padding: 1rem 1.5rem;
+    justify-content: flex-end;
+    background-color: rgb(139, 142, 138);
+    align-items: center;
+}
+.navbar-container > *{
+    margin: 0 1.25rem;
+    text-decoration: none;
+    font-weight: 600;
+    color:rgb(0, 99, 230);
+}
+.navbar-home{
+    color:rgb(23, 19, 19);
+}
+.navbar-login {
+    color:rgb(163, 162, 162);
+}
+.navbar-register{
+    color:rgb(255, 255, 255);
+    background-color: rgb(150, 150, 150);
+    padding:0.35rem;
+    border-radius: 6px;
+}
+.navbar-user{
+    color: rgb(165, 38, 0);
+}
+.navbar-logout {
+    color:rgb(14, 12, 12);
+    padding:0.35rem;
+}

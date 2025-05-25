@@ -1,0 +1,149 @@
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(to right, #f0f4ff, #ffffff);
+  padding: 2rem;
+}
+
+.register-left {
+  flex: 1;
+  text-align: left;
+  padding: 2rem;
+}
+
+.register-title {
+  font-weight: bold;
+  font-size: 2rem;
+  color: #333;
+}
+
+.register-subtitle {
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: #666;
+}
+
+.register-link {
+  color: #4461f2;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.register-link:hover {
+  text-decoration: underline;
+}
+
+.register-right {
+  flex: 1;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 2rem;
+  max-width: 400px;
+}
+
+form {
+  display: flex;
+  margin-top: 1rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  width: 200px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+input {
+  border: none;
+  padding: 0.35rem;
+  font-family: "Inter", sans-serif;
+  margin: 0.75rem 0;
+  border-radius: 4px;
+  width: 100%;
+  background-color: #EAF0F7;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  align-self: center;
+  margin-top: 1rem;
+  font-size: 1rem;
+  padding: 0.65rem;
+  border-radius: 4px;
+  color: white;
+  width: 100%;
+  background-color: #4461F2;
+  transition: transform 0.3s; /* Thêm hiệu ứng chuyển đổi */
+}
+
+button:hover {
+  transform: scale(1.1); /* Phóng to khi hover */
+}
+
+.register-register {
+  margin-left: auto;
+  font-size: x-small;
+  color: #d4d4d4;
+}
+
+.or {
+  margin-top: 1rem;
+  font-size: x-small;
+  color: #d4d4d4;
+  margin-right: 130px;
+}
+
+.register-register-link {
+  display: block; /* Đảm bảo nó hiển thị như một block-level element */
+  text-decoration: none;
+  border: none;
+  margin-top: 1rem;
+  color: #4461F2;
+  font-weight: 700;
+  background-color: #caa2a2;
+  border-radius: 4px;
+  font-size: 1rem;
+  width: 200px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px; /* Đảm bảo nội dung được căn giữa theo chiều dọc */
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.register-register-link:hover {
+  transform: scale(1.1); /* Phóng to khi hover */
+  background-color: #a67a7a; /* Thay đổi màu nền khi hover */
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+  margin-right: 130px;
+}
+
+.social-icons .icon {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.social-icons .icon:hover {
+  transform: scale(1.1);
+}
+
+.img {
+  width: 400px;
+  height: 350px;
+  display: block;
+  margin-left: 500px;
+  margin-bottom: 100px;
+}
+
+
+

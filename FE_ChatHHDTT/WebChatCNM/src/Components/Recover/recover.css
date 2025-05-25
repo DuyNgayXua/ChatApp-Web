@@ -1,0 +1,185 @@
+.recover-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(to right, #f0f4ff, #ffffff);
+  padding: 2rem;
+}
+
+.recover-left {
+  flex: 1;
+  text-align: left;
+  padding: 2rem;
+}
+
+.recover-title {
+  font-weight: bold;
+  font-size: 2rem;
+  color: #333;
+}
+
+.recover-subtitle {
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: #666;
+}
+
+.recover-link {
+  color: #4461f2;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.recover-link:hover {
+  text-decoration: underline;
+}
+
+.recover-right {
+  flex: 1;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 2rem;
+  max-width: 400px;
+}
+
+form {
+  display: flex;
+  margin-top: 1rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  width: 200px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+input {
+  border: none;
+  padding: 0.35rem;
+  font-family: "Inter", sans-serif;
+  margin: 0.75rem 0;
+  border-radius: 4px;
+  width: 100%;
+  background-color: #eaf0f7;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  align-self: center;
+  margin-top: 1rem;
+  font-size: 1rem;
+  padding: 0.65rem;
+  border-radius: 4px;
+  color: white;
+  width: 100%;
+  background-color: #4461f2;
+  transition: transform 0.3s;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+.recover-register {
+  margin-left: auto;
+  font-size: x-small;
+  color: #d4d4d4;
+}
+
+.or {
+  margin-top: 1rem;
+  font-size: x-small;
+  color: #d4d4d4;
+  margin-right: 130px;
+}
+
+.recover-register-link {
+  display: block;
+  text-decoration: none;
+  border: none;
+  margin-top: 1rem;
+  color: #4461f2;
+  font-weight: 700;
+  background-color: #caa2a2;
+  border-radius: 4px;
+  font-size: 1rem;
+  width: 200px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.recover-register-link:hover {
+  transform: scale(1.1);
+  background-color: #a67a7a;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+  margin-right: 130px;
+}
+
+.social-icons .icon {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.social-icons .icon:hover {
+  transform: scale(1.1);
+}
+
+.img {
+  width: 400px;
+  height: 350px;
+  display: block;
+  margin-left: 500px;
+  margin-bottom: 100px;
+  
+}
+.input-container {
+  position: relative;
+  width: 100%;
+}
+
+.input-container input {
+  width: 100%;
+  padding-right: 2rem; /* Chừa chỗ cho icon con mắt */
+}
+
+.password-toggle {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #666;
+}
+
+.password-toggle:hover {
+  color: #333;
+}
+
+.error-message {
+  color: #ff0000; /* Màu đỏ cho lỗi */
+  background-color: #fff0f0; /* Màu nền nhẹ để làm nổi bật thông báo */
+  border: 1px solid #ff0000; /* Đường viền đỏ để làm rõ lỗi */
+  border-radius: 5px; /* Bo góc */
+  padding: 5px; /* Khoảng cách xung quanh nội dung */
+  width: 200px;
+  margin-top: 10px; /* Khoảng cách từ phần trên */
+  font-size: 14px; /* Kích thước chữ */
+  font-weight: bold; /* Làm đậm chữ */
+  text-align: center; /* Căn giữa nội dung */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ cho hộp thông báo */
+  animation: fadeIn 0.5s ease; /* Thêm hiệu ứng mờ dần khi hiển thị */
+}
+
